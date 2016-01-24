@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $('#about').click(function(){
+        $('#aboutOpn').slideDown('slow');
+    });
+    $('#aboutClose').click(function(){
+        $('#aboutOpn').slideUp('slow');
+    });
+    $('#contact').click(function(){
+        $("#contactOpn").slideDown('slow');
+    });
+    $('#contactClose').click(function(){
+    	$('#contactOpn').slideUp('slow');
+    });
+    $('#interOpn').click(function(){
+    	alert();
+    	$('#burgerOpn').slideDown('slow');
+    });
+});
+$(function(){
+	$('#menuInter').load('../includes/menu-inter.html');
+});
