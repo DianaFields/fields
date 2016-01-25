@@ -344,27 +344,8 @@ h2{
   width:1024px;
   margin:0 auto;
 }
-.burgerMenu{
-  height:50px;
-  width:50px;
-  color:black;
-}
-.interNav{
-  width:100%;
-  height:100px;
-}
-.interNav ul{
-  width:100px;
-}
-.interNav ul li{
-  width:50px;
-  color:black;
-  font-size: 30px;
-  cursor:pointer;
-}
-.interNav button:hover{
-  background:none!important;
-}
+
+
 #burgerOpn{
   display:none;
   height:300px;
