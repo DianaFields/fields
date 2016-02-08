@@ -1,67 +1,36 @@
  <style type="text/css">
- .interNav{
-  width: 100%;
-  position: relative;
- }
- .interNav ul li{
-  font-family: 'Bitter', serif;
-  font-size: 18px;
-  width: 90%;
-  height: 15px;
-  line-height: 15px;
-  text-align: center;
-  padding: 20px;
-  cursor: pointer;
-  border-bottom: 1px dotted white;
- }
-.interNav ul li:hover{
-    color: pink;
-  }
-.opn{
-  height: 200px;
-  float: right;
-  right: 0;
-  display: none;
-}
-.icon{
-  position: relative;
-  width: 50px;
-  float: right;
-  padding: 40px;
-  font-size: 30px;
-  text-align: right;
-}
-.icon:hover .opn{
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  right: 20px;
-  margin-top: 60px;
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
-}
-.burger{
-  cursor: pointer;
-  width: 100px;
-  float: right;
-}
-.listNav{
-  width: 150px;
-  padding: 0;
-}
-.listNav ul{
-  width: 150px;
-}
+
  </style>
  <nav class="interNav">
-    <div class="dic">
+    <div class="dic-inter">
+      <span class="logo-inter" onclick="location.href='../index.html';">
+        <img src="../assets/logo.png">
+      </span>
       <div class="icon">
-        <div class=" burger icon-menu"></div>
+        <div class="burger icon-menu"></div>
         <div class="opn">
           <ul class="listNav">
-            <li>Web Design</li>
-            <li>Corporate</li>
-            <li>Identity</li>
+            <li onclick="location.href='../web/index.html';">Web
+              <div class="ico-inter1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </li>
+            <li onclick="location.href='../web/index.html';">Graphic
+              <div class="ico-inter2">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </li>
+            <li onclick="location.href='../iden/index.html';">CV
+              <div class="ico-inter3">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </li>
           </ul> 
         </div>
       </div>
