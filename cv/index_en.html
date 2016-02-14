@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Book Design">
+	    <meta name="keywords" content="Web Design, UX, UI, Diseño Web">
+	    <meta name="author" content="Diana Campos">
+    	<title>Diana Campos</title>    
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/fields.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../style/animate.css">
+        <link rel="stylesheet" type="../style/easing.css" href="">
+        <style type="text/css">
+        body{
+            background: black
+        }
+        	.item-cv{
+        		width: 1050px;
+        		margin:0 auto;
+        	}
+        	.me{
+        		width: 1055px;
+                background: white;
+                display: inline-block;
+                margin:0 auto;
+        	}
+        	.info-me{
+                width: 69%;
+        		color: black;
+        		top:0;
+                display: inline-block;
+                vertical-align: top;
+                padding:5%;
+                box-sizing:border-box;
+
+        	}
+            .picture-me{
+                width: 30%;
+                text-align: center;
+                display: inline-block;
+            }
+            .picture-me img{
+                width: 80%;
+            }
+            .education{
+                width: 80%;
+                margin:0 auto;
+                color: white;
+            }
+            .education section{
+                margin: 20px 0 0 0;
+            }
+            .edu-icon{
+                width: 35%;
+                height: 150px;
+                display:inline-block;
+                text-align: center;
+                border-right: 1px dotted pink;
+                vertical-align: top;
+                text-align: right;
+                padding: 0 20px 0 0;
+            }
+            .edu-icon:before{
+                font-family: fields;
+                content: '\004a';
+                width: 100px;
+                height: 100px;
+                background: pink;
+                display: inline-block;
+                font-size: 40px;
+            }
+            .edu-list{
+                width: 64%;
+                height: 150px;
+                display: inline-block;
+                padding: 0 0 0 20px;
+            }
+            h3{
+                color: aqua;
+                padding:0;
+                margin: 0;
+            }
+            .trans:hover{
+                margin-top:0;
+            }
+            .trans{
+                margin-top:100px;
+               -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition:         all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
+        </style>
+	</head>
+	<body>
+		<div class="item-cv">
+			<div class="me">
+                <div class="picture-me">
+				    <img src="../assets/me.png">
+                </div>
+                <div class="info-me">
+                orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            </div>
+			</div>	
+			
+            <div class="education">
+                <section class="">
+                    <div class="edu-icon wow slideInLeft data-wow-duration="2s""></div>
+                    <div class="edu-list wow slideInRight data-wow-duration="5s"">
+                            <h3>Bachelor Design & Visual Communication</h3>
+                            <h4>UNAM 2009 | 2013</h4>
+                            <ul>
+                                <li>Packaging</li>
+                                <li>Final Disertation: Emotional Design</li>
+                            </ul>
+                    </div>
+                </section>
+
+                <section class="trans wow bounceInUp data-wow-delay="4s" data-wow-duration="1s"">
+                    <div class="edu-icon"></div>
+                    <div class="edu-list">
+                            <h3>Employment</h3>
+                            
+                            <h4><a href="ww.carel.mx">Carel S.A de C.V</a></h4>
+                            <p></p>
+                            <p>Marketing & Graphic Communication</p>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>Identity</li>
+                            </ul>
+
+                            <h4>Tech&Design</h4>
+                            <p>Junior Web Design</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="edu-icon"></div>
+                    <div class="edu-list">
+                            <h3>Proffessional Skills</h3>
+                            
+                            <h4>Carel S.A de C.V</h4>
+                            <p></p>
+                            <ul>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>InDesign</li>
+                                <li>Sketch</li>
+                                <li>CSS | HTML</li>
+                                <li>Javascript | JQuery (basic)</li>
+                            </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="edu-icon"></div>
+                    <div class="edu-list">
+                            <h3>Certificatons</h3>
+                            
+                            <h4>CILS</h4>
+                            <p>Università per Stranieri di Siena</p>
+                            <ul>
+                                <li>Score: B</li>
+                            </ul>   
+
+                            <h4>IELTS</h4>
+                            <p>Score: 6</p>
+                            
+                    </div>
+                </section>
+            </div>
+            <div class="skills"></div>
+            <div class="experience"></div>
+            <div class="contact"></div>
+		</div>
+	</body>
+    <script src="../js/wow.js"></script>
+    <script type="../js/jquery.easing.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+</html>

@@ -38,7 +38,7 @@ h2{
   width: 90%;
   height: auto;
   margin:0 auto;
-  padding-top: 120px;
+  padding-top: 50px;
   background: none;
 }
 .item-logo{
@@ -58,25 +58,29 @@ h2{
   background: black;
 }
 .skills section{
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
 }
 .skills figure{
-  width: 24.5%;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #2B2B2B;
+  border-radius: 75px;
   display: inline-flex;
   color: white;
-  margin: 0;
+  margin:0 80px 0 80px;
 }
 
 .ico-front p:before{
   font-family: fields;
   font-size: 50px;
   display: block;
-  padding-top: 20px;
-  color: pink;
+  padding-top: 10px;
+  color:#A47F91;
 }
 .ico-front p{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 200;
   text-align: center;
   width: 100%;
@@ -84,7 +88,7 @@ h2{
 }
 .responsive p:before{
   content: '\004c';
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .html5 p:before{
   content: '\004f';
@@ -247,8 +251,7 @@ input[type="checkbox"]:checked ~ .grid {
   padding: 20px;
   cursor: pointer;
   color:#f44f7e;
-  border-bottom: 2px dotted black;
-  display: block;
+  border-bottom: 2p
  }
 .interNav ul li:hover{
   color: black;
@@ -436,11 +439,13 @@ input[type="checkbox"]:checked ~ .grid {
 .web-second{
   background:#E6E6E6;
 }
+.main section{
 
+}
 .main section:first-child{
   background: #ededed;
-  height: 425px;
-  padding: 2%;
+  height: 350px;
+  padding: 20px 100px;
   margin-top: 200px;
 }
 .main section figure{
@@ -448,9 +453,9 @@ input[type="checkbox"]:checked ~ .grid {
 }
 .main section:nth-child(2){
   background: #ccc;
-    height: 460px;
-    padding: 2%;
-    vertical-align: middle;
+  height: 350px; 
+  padding: 20px 100px;
+  vertical-align: middle;
 }
 .main section:nth-child(3){
   background: #ededed;
@@ -487,10 +492,12 @@ input[type="checkbox"]:checked ~ .grid {
 .web{
   background: url('../assets/web-1.jpg')no-repeat;
   background-size: cover;
+ height: 100%;
 }
 .corp{
   background: url('../assets/item-1.jpg')no-repeat;
   background-size: cover;
+ height: 100%;
 }
 .design{
   background: url('../assets/item-2.jpg')no-repeat;
@@ -535,6 +542,7 @@ input[type="checkbox"]:checked ~ .grid {
   border:none;
   background:inherit;
   color:white;
+  outline: none;
   -webkit-appearance:none;
 
 }
@@ -601,10 +609,10 @@ input[type="checkbox"]:checked ~ .grid {
 
 .dic{
   background: url('../assets/logo.png') no-repeat;
-  background-size:8%;
-  background-position: left;
+  background-size:7%;
+  background-position: 100px 15px;
   height: 100px;
-  width: 1024px;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -622,14 +630,15 @@ nav ul{
   right: 0;
   width:60%;
   margin: 0;
+  padding-right: 50px;
   float: right;
-  height: 100px;
+  height: 120px;
   line-height: 90px;
 }
 nav ul li{
   float: right;
   margin-right: 0;
-  height: 100px;
+  height: 120px;
   text-align: center;
   width: 25%;
   background;blue;
@@ -647,6 +656,9 @@ nav ul li button{
   cursor:pointer;
   color: #f44f7e;
   -webkit-appearance:none;
+  x dotted black;
+  display: block;
+  outline: none;
 }
 #menu li button:hover{
   text-decoration: underline;
@@ -670,6 +682,14 @@ nav ul li:first-child button:hover{
 .icon-cancel-1:before{
   content: '\0047';
 }
+@media screen and (max-width: 1250px){
+.skills figure{
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  margin: 0 30px 0 50px;
+}
+}
 @media screen and (max-width: 1024px){
   .grid-item:hover:after{
   display: none;
@@ -683,8 +703,16 @@ nav ul li:first-child button:hover{
 .web-second{
   height: 450px;
 }
-}
 
+}
+@media screen and (max-width: 890px){
+.skills figure{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin: 0 30px 0 50px;
+}
+}
 @media screen and (max-width: 768px){
   .dic{
     width:100%;
@@ -695,6 +723,7 @@ nav ul li:first-child button:hover{
     width: 100%;
   }
   nav ul{
+    padding: 0 0 0 35%;
     width:100%;
   }
   .content, .main{
@@ -738,10 +767,9 @@ nav ul li:first-child button:hover{
 h2{
   width:100%;
 }
-nav ul li{
-
+.item-txt ul{
+  font-size: 13px;
 }
-
 }
 
 @media screen and (max-width: 450px){
@@ -832,8 +860,25 @@ nav ul li{
   padding: 0;
   font-size: 26px;
 }
+.item-txt ul{
+  margin: 0 auto;
+}
+.item-txt ul li{
+  display:block;
+}
+
 }
 @media screen and (max-width: 320px){
+  h2{
+    font-size: 13px;
+    width: 60%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+  }
+.contentFull{
+  padding-top: 0;
+}
 .content,  .main{
   width: 100%;
   margin: 0 auto;
@@ -848,21 +893,30 @@ nav ul li{
   background-position:20px;
   display:flex;
 }
+nav{
+  height: 100px;
+}
 nav ul{
     width: 100%;
     float: none;
     display: flex;
     text-align: right;
-    padding-left: 30%;
+    padding-left: 40%;
+    height: 100px;
 }
 nav ul li{
+  height: 100px;
     float: inherit;
     width: 50%;
     margin: 0 auto;
     padding: 0;
 }
+nav ul li button{
+  font-size: 18px;
+}
 .about, .contact{
   padding:5px;
+  margin-top: -100px;
 }
 .contact section{
   width:90%;
@@ -876,7 +930,11 @@ nav ul li{
   font-size: 16px;
 }
 .main section figure{
-  background-size: contain;
+  width: 100%;
+  padding: 0;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
 }
 .item{
   height:130px;
@@ -892,16 +950,21 @@ nav ul li{
 }
 .main section:first-child, .main section:nth-child(2) {
   padding: 0;
-  height: 130px;
+  height: 300px;
 }
 .skills{
-  height: 100px;
+  height: 250px;
+  z-index:-2;
 }
 .skills section{
+  padding-top: 10px;
   width: 100%;
 }
 .skills figure{
-  width: 23.5%;
+  width: 100px;
+  height: 100px;
+  margin: 5px 25px 5px 25px;
+  border-radius: 50px;
 }
 .ico-front p{
   font-size: 14px;
