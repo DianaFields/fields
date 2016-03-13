@@ -42,8 +42,9 @@ h2{
   background: none;
 }
 .item-logo{
-  margin-top:0;
-  height: 800px;
+  margin:0 auto;
+  height: auto;
+  margin-bottom: 50px;
 }
 .footer{
   width: 100%;
@@ -54,53 +55,58 @@ h2{
 /*skills inicio*/
 .skills{
   width: 100%;
-  height: 200px;
-  background: black;
+  height: 150px;
+  background: white;
 }
 .skills section{
+  border-top: 2px dotted #999;
   width: 100%;
+  margin: 0 auto;
   text-align: center;
-  padding-top: 20px;
+  padding: 40px 0;
 }
 .skills figure{
   width: 150px;
-  height: 150px;
-  border: 4px solid #2B2B2B;
+  height: 120px;
+/*  border: 2px solid #c2c2c2;*/
   border-radius: 75px;
   display: inline-flex;
   color: white;
-  margin:0 80px 0 80px;
+  margin:0 30px 0 30px;
 }
 
 .ico-front p:before{
   font-family: fields;
-  font-size: 50px;
+  font-size: 35px;
   display: block;
   padding-top: 10px;
-  color:#A47F91;
+  color:#333;
+  background: white;
+  line-height: auto;
 }
 .ico-front p{
   font-size: 15px;
   font-weight: 200;
   text-align: center;
   width: 100%;
-  color: white;
+  color: #f44f7e;
+ border-bottom: 1px dotted #666;
 }
 .responsive p:before{
-  content: '\004c';
-  padding-bottom: 10px;
+  content: '\0053';
+  padding-bottom: 15px;
 }
 .html5 p:before{
-  content: '\004f';
-  padding-bottom: 20px;
+  content: '\0057';
+  padding-bottom: 15px;
 }
 .css3 p:before{
-  content: '\0050';
-  padding-bottom: 20px;
+  content: '\0046';
+  padding-bottom: 15px;
 }
 .cv p:before{
-  content: '\0051';
-  padding-bottom: 20px;
+  content: '\0048';
+  padding-bottom: 15px;
 }
 /*skills end*/
 
@@ -162,11 +168,11 @@ input[type="checkbox"]:checked ~ .grid {
 .grid {
   position: inherit;
   width: 1024px;
-  margin: 0 0 20px 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-flex;
   -webkit-flex-wrap:wrap;
       -ms-flex-wrap:wrap;
           flex-wrap:wrap;
@@ -190,9 +196,6 @@ input[type="checkbox"]:checked ~ .grid {
 .grid-min img{
   box-shadow: none!important;
   width: 85%;
-}
-.web-first{
-  height: 450px;
 }
 .web-second{
   height: 700px;
@@ -269,7 +272,7 @@ input[type="checkbox"]:checked ~ .grid {
 }
 .icon:before{
   font-family: 'fields';
-  content: '\0046';
+  content: '\0043';
 }
 .listNav div{
   margin-top: 30px;
@@ -281,16 +284,16 @@ input[type="checkbox"]:checked ~ .grid {
   font-size: 40px;
 }
 .listNav .ico-inter1 span:first-child:before{
-  content: '\0041';
+  content: '\0053';
   font-family: 'fields';
 }
 
 .listNav .ico-inter1 span:nth-child(2):before{
-  content: '\004c';
+  content: '\0057';
   font-family: fields;
 }
 .listNav .ico-inter2 span:first-child:before{
-  content: '\0048';
+  content: '\0052';
   font-family: fields;
 }
 .listNav .ico-inter2 span:nth-child(2):before{
@@ -298,7 +301,7 @@ input[type="checkbox"]:checked ~ .grid {
   font-family: fields;
 }
 .listNav .ico-inter3 span:first-child:before{
-  content: '\0051';
+  content: '\0048';
   font-family: fields;
   padding: 0;
 }
@@ -314,9 +317,12 @@ input[type="checkbox"]:checked ~ .grid {
   padding-top: 30px;
 }
 .logosFront label{
-  width: 30%;
-  height: 300px;
-  line-height: 300px;
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  margin-right: 80px;
+  margin-left: 80px;
+  border-radius: 150px;
 }
 .logosFront label:first-child{
  background: url('../assets/bg/bg-12.jpg');
@@ -349,6 +355,10 @@ input[type="checkbox"]:checked ~ .grid {
  padding-top: 50px;
  margin-top: 30px;
 }
+.fix-pet img{
+  width: 50%!important;
+  margin-top: 45px;
+}
 .fix img{
   width: 48%!important;
 }
@@ -370,15 +380,14 @@ input[type="checkbox"]:checked ~ .grid {
 }
 .grid-item-intro{
   margin: 0 auto;
+  display: flex;
   height:auto;
-  width: 40%;
-  padding: 3em 0 3em 0;
+  width: 100%;
 }
-.grid-item-introBig{
-  margin: 0 auto;
-  height:auto;
+.grid-item-intro a{
+  display: inline-block;
   width: 49%;
-  padding: 3em 0 3em 0;
+  margin: 0 auto;
 }
 .grid-item{
   margin: 3em;
@@ -429,9 +438,7 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .grid img {
-  padding:0;
-  width: 70%;
-  height: auto;
+  width: 80%;
 }
 .web-first{
   background:#FA5858;
@@ -440,21 +447,20 @@ input[type="checkbox"]:checked ~ .grid {
   background:#E6E6E6;
 }
 .main section{
+  padding:20px 10%;
 
 }
 .main section:first-child{
-  background: #ededed;
+  background: white;
   height: 350px;
-  padding: 20px 100px;
-  margin-top: 200px;
+  margin-top: 121px;
 }
 .main section figure{
   vertical-align: middle;
 }
 .main section:nth-child(2){
-  background: #ccc;
+  background: #EE3C42;
   height: 350px; 
-  padding: 20px 100px;
   vertical-align: middle;
 }
 .main section:nth-child(3){
@@ -465,7 +471,7 @@ input[type="checkbox"]:checked ~ .grid {
 }
 /*items*/
 .item{
-  width: 70%;
+  width: 68%;
   background-size: cover;
   height: 350px;
   padding: 0;
@@ -474,7 +480,7 @@ input[type="checkbox"]:checked ~ .grid {
 }
 .item-txt{
   font-size: 15px;
-  width: 29%;
+  width: 25%;
   display: inline-block;
   padding-left: 20px;
   margin: 0 auto;
@@ -485,9 +491,17 @@ input[type="checkbox"]:checked ~ .grid {
 
 }
 .item-txt ul li{
+  width: 70%;
+  margin: 0 auto;
+  margin-top:5px;
   list-style: none;
+  height: 25px;
   line-height: 25px;
-  color: #f44f7e;
+  color: black;
+  background: #EE3C42;
+}
+.back-gray li{
+  background: white!important;
 }
 .web{
   background: url('../assets/web-1.jpg')no-repeat;
@@ -534,6 +548,7 @@ input[type="checkbox"]:checked ~ .grid {
     text-align: left;
     height:400px;
 }
+
 .about button{
   position:absolute;
   font-size: 25px;
@@ -545,6 +560,18 @@ input[type="checkbox"]:checked ~ .grid {
   outline: none;
   -webkit-appearance:none;
 
+}
+.contact p{
+  font-weight: 200;
+
+}
+.about p{
+  font-weight: 200;
+  line-height: 26px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
 }
 .contactOpn{
   height:500px;
@@ -560,12 +587,12 @@ input[type="checkbox"]:checked ~ .grid {
     border: none;
     background: inherit;
     color: white;
-    -webkit-appearance: none;
+    outline: none;
 }
 .contact section{
-  width:40%;
+  width:53%;
   margin:0 auto;
-  margin-top: 60px;
+  margin-top: 20px;
   text-align: center;
 }
 .contact section input{
@@ -610,9 +637,9 @@ input[type="checkbox"]:checked ~ .grid {
 .dic{
   background: url('../assets/logo.png') no-repeat;
   background-size:7%;
-  background-position: 100px 15px;
+  background-position: 0 15px;
   height: 100px;
-  width: 100%;
+  width: 1150px;
   display: block;
   margin: 0 auto;
 }
@@ -680,17 +707,27 @@ nav ul li:first-child button:hover{
   cursor: pointer;
 }
 .icon-cancel-1:before{
-  content: '\0047';
+  content: '\004c';
+  outline:none;
 }
+/*.skills figure{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin: 0 10px 0 10px;
+}*/
 @media screen and (max-width: 1250px){
 .skills figure{
-  width: 140px;
-  height: 140px;
-  border-radius: 70px;
-  margin: 0 30px 0 50px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin: 0 10px 0 10px;
 }
 }
 @media screen and (max-width: 1024px){
+  .dic{
+    width: 80%;
+  }
   .grid-item:hover:after{
   display: none;
 }
@@ -707,13 +744,25 @@ nav ul li:first-child button:hover{
 }
 @media screen and (max-width: 890px){
 .skills figure{
-  width: 120px;
+  width: 45%;
   height: 120px;
   border-radius: 60px;
-  margin: 0 30px 0 50px;
+  padding:0 10px;
+  margin: 0 auto;
 }
 }
 @media screen and (max-width: 768px){
+  .dic{
+    width: 80%;
+  }
+  .main section{
+    padding: 5%;
+  }
+  .item-txt{
+    width: 29%;
+    padding-left: 10px;
+    box-sizing:border-box;
+  }
   .dic{
     width:100%;
     background-size: 10%;
@@ -747,7 +796,8 @@ nav ul li:first-child button:hover{
 }
  .grid, .grid-item{
   width: 100%;
-  height: 300px;
+  height: auto;
+  margin-top: 80px;
  }
  .web-second{
   height: 500px;
@@ -762,7 +812,7 @@ nav ul li:first-child button:hover{
     width: 100%;
 }
 .item{
-  width:100%;
+  width:69%;
 }
 h2{
   width:100%;
@@ -770,12 +820,17 @@ h2{
 .item-txt ul{
   font-size: 13px;
 }
+.logosFront label{
+  margin-left: 42px;
+  margin-right: 42px;
+  margin-top: 0;
+}
 }
 
 @media screen and (max-width: 450px){
   .grid, .grid-item{
     margin:0 auto;
-    min-height: 550px;
+    height:auto;
   }
 .content,  .main{
   width: 100%;
@@ -819,7 +874,10 @@ nav ul li{
   font-size: 16px;
 }
 .main section figure{
-  background-size: contain;
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  padding:5%;
 }
 .item{
   height:200px;
@@ -848,7 +906,7 @@ nav ul li{
 .icon:hover .opn{
  min-width: 300px;
  margin: 41px 20px;
- height: 150px;
+ height: auto;
 }
 .interNav ul li{
   padding:25px  5px;
@@ -866,15 +924,33 @@ nav ul li{
 .item-txt ul li{
   display:block;
 }
+.main section{
+  width: 100%;
+  padding:0;
+}
+.logosFront label{
+  padding:0;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+}
+.contentFull{
+  padding-top: 120px;
+}
+.fix-pet img{
+  margin-top: 40px;
+}
 
 }
 @media screen and (max-width: 320px){
   h2{
     font-size: 13px;
-    width: 60%;
+    width: 70%;
     padding-bottom: 5px;
     border-bottom: 1px solid gray;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 .contentFull{
   padding-top: 0;
@@ -930,11 +1006,11 @@ nav ul li button{
   font-size: 16px;
 }
 .main section figure{
-  width: 100%;
-  padding: 0;
-  height: 180px;
-  background-position: center;
-  background-size: cover;
+      width: 100%;
+    padding: 0;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
 }
 .item{
   height:130px;
@@ -950,7 +1026,8 @@ nav ul li button{
 }
 .main section:first-child, .main section:nth-child(2) {
   padding: 0;
-  height: 300px;
+  height: auto;
+  margin-bottom: 30px;
 }
 .skills{
   height: 250px;
@@ -976,13 +1053,14 @@ nav ul li button{
   padding-top: 0;
 }
 .logosFront label{
-  width: 100%;
-  height: 200px;
-  line-height: 200px;
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  margin: 20px auto;
 }
 .fix-pet img{
   width: 50%;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 .grid-item-intro{
   width: 95%;

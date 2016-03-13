@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Diana Campos</title>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" type="text/css" href="style/style.css">
+    	<link rel="stylesheet" type="text/css" href="style/fields.css">
+    	<link href='https://fonts.googleapis.com/css?family=Bitter:700,400' rel='stylesheet' type='text/css'>
+    	<link rel="stylesheet" type="text/css" href="style/normalize.css">
+    	<link rel="stylesheet" href="style/animate.css">
+    	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="style/bootstrap-image-gallery.min.css">
+<style type="text/css">
+	.main-2{
+		margin-top: 150px;
+	}
+	.column{
+		width: 33%;
+		display: inline-block;
+		border-right: 1px solid gray;
+		vertical-align: top;
+	}
+	.column section{
+		text-align: center;
+	}
+
+	.column section img{
+		width: 90%;
+	}
+	.c-1, .c-3{
+		padding: 50px 0; 
+	}
+</style>
+	</head>
+	<body>
+		<nav>
+			<div class="dic">
+				<ul id="menu">
+					<li>
+						<button id="contact">Contact</button>
+					</li>
+					<li>
+						<button id="about">About</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="about" id="aboutOpn">
+			<button id="aboutClose" class="icon-cancel-1"></button>
+			<p> <span class="pinky">Hello</span> <br> I'm Diana a full-time designer based in Mexico City. I create visual identities, print materials and websites. Check out my work!</p>
+		</div>
+		<div class="contact" id="contactOpn">
+			<button id="contactClose" class="icon-cancel-1"></button>
+			<section>
+				<form name="contactform" class="hojaContact txt-me" method="post" action="send_form_email.php">
+				<p>Have an inquiry, request or just want to chat, I'd love to talk about future concept and ideas, so let's get in touch!</p>
+				<input type="text" name="name" placeholder="Your name" class="icon-mail">
+				<input type="mail" name="email" placeholder="e-mail">
+				<textarea  rows="10" placeholder="Write something"></textarea>
+				<button value="Submit" type="submit" class=" icon-paper-plane">Send</button>
+				</form>
+			</section>
+
+		</div>
+		<div class="main-2">	
+			<!-- <section class="intro">
+					<img src="assets/background.jpg">
+			</section>
+ -->
+ 		<div class="column c-1">
+ 			<section id="links">
+ 				<a href="assets/web/push-iphone5.png" title="Carel Mexicana" data-gallery>
+          			<img src="assets/web/push-iphone5.png" alt="Carel Mexicana">
+        		</a>
+ 			</section>
+ 			<section>
+ 				<img src="assets/web/carel2.png">
+ 			</section>
+ 			<section></section>
+ 		</div>
+ 		<div class="column c-2">
+ 			<section>
+ 				<img src="assets/web/push-iphone5.png">
+ 			</section>
+ 			<section>
+ 				<img src="assets/web/push-iphone2.jpg">
+ 			</section>
+ 			<section></section>
+ 		</div>
+ 		<div class="column c-3">
+ 			<section>
+ 				<img src="assets/web/push-iphone5.png">
+ 			</section>
+ 			<section></section>
+ 			<section></section>
+ 		</div>
+			
+
+		</div>
+	
+		<div class="footer"></div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>  
+		<script type="text/javascript" src="js/lib.js"></script>
+		    <script src="js/blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+
+		<script src="js/wow.js"></script>
+        <script>
+              new WOW().init();
+              </script>
+	</body>
+
+</html>

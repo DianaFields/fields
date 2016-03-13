@@ -26,15 +26,18 @@
 		</nav>
 		<div class="about" id="aboutOpn">
 			<button id="aboutClose" class="icon-cancel-1"></button>
-			<p>holi</p>
+			<p> <span class="pinky">Hello</span> <br> I'm Diana a full-time designer based in Mexico City. I create visual identities, print materials and websites. Check out my work!</p>
 		</div>
 		<div class="contact" id="contactOpn">
 			<button id="contactClose" class="icon-cancel-1"></button>
 			<section>
-				<input type="text" placeholder="Your name" class="icon-mail">
-				<input type="mail" placeholder="e-mail">
+				<form name="contactform" class="hojaContact txt-me" method="post" action="send_form_email.php">
+				<p>Have an inquiry, request or just want to chat, I'd love to talk about future concept and ideas, so let's get in touch!</p>
+				<input type="text" name="name" placeholder="Your name" class="icon-mail">
+				<input type="mail" name="email" placeholder="e-mail">
 				<textarea  rows="10" placeholder="Write something"></textarea>
-				<button class="icon-paper-plane">Send</button>
+				<button value="Submit" type="submit" class=" icon-paper-plane">Send</button>
+				</form>
 			</section>
 
 		</div>
@@ -58,7 +61,7 @@
 				<figure class="item corp"></figure>
 				<figure class="item-txt">
 					<h2>GRAPHIC DESIGN</h2>
-					<ul>
+					<ul class="back-gray">
 						<li>Communication</li>
 						<li>Social Media</li>
 					</ul>
@@ -72,7 +75,7 @@
 		<div class="skills wow bounceInUp">
 			<section>
 				<figure class="ico-front responsive">
-					<p>Responsive <br>Design</p>
+					<p>Responsive Design</p>
 				</figure>
 				<figure class="ico-front html5">
 					<p>HTML</p>

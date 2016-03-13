@@ -14,73 +14,204 @@
         <link rel="stylesheet" type="../style/easing.css" href="">
         <style type="text/css">
         body{
-            background: black
+            background: #EFEFEF;
+        }
+        .cv-head{
+            color: #999;
+            font-size: 22px;
         }
         	.item-cv{
         		width: 1050px;
         		margin:0 auto;
         	}
         	.me{
-        		width: 1055px;
                 background: white;
+        		width: 100% ;
                 display: inline-block;
                 margin:0 auto;
+                border-bottom:1px dotted gray;
         	}
         	.info-me{
-                width: 69%;
-        		color: black;
+                width: 30%;
+                height: 100%;
+        		color: gray;
         		top:0;
                 display: inline-block;
                 vertical-align: top;
-                padding:5%;
+                padding: 65px 0 0 0;
                 box-sizing:border-box;
+                text-align: center;
 
         	}
+            .infoContact{
+                width: 29%;
+                display: inline-block;
+                vertical-align: top;
+                padding-top: 60px;
+            }
+            .info-me span:first-child{
+                font-size: 40px;
+                color: #333;
+            }
             .picture-me{
-                width: 30%;
+                width: 39%;
                 text-align: center;
                 display: inline-block;
+                border-right: 1px dotted gray;
             }
             .picture-me img{
-                width: 80%;
+                width: 45%;
             }
             .education{
-                width: 80%;
+                background: white;
+                width: 100%;
                 margin:0 auto;
-                color: white;
+                color: black;
             }
             .education section{
-                margin: 20px 0 0 0;
+                padding: 80px 0 0 0;
             }
-            .edu-icon{
-                width: 35%;
-                height: 150px;
+            .education section:first-child{
+                padding: 20px 0 0 0;
+            }
+            .edu-icon, .exp-icon, .soft-icon, .lang-icon{
+                width: 39%;
                 display:inline-block;
                 text-align: center;
-                border-right: 1px dotted pink;
                 vertical-align: top;
                 text-align: right;
                 padding: 0 20px 0 0;
             }
-            .edu-icon:before{
-                font-family: fields;
-                content: '\004a';
-                text-align: center;
-                width: 100px;
-                height: 100px;
-                display: inline-block;
-                font-size: 40px;
-            }
-            .edu-list{
-                width: 64%;
-                height: 150px;
+ 
+            .info-list, .soft-list, .work-list, .college-list{
+                width: 60%;
                 display: inline-block;
                 padding: 0 0 0 20px;
+                color: #333;
+                border-left: 1px dotted gray;
+            }
+            .work-list p{
+                margin: 0 auto;
+                padding-top: 5px;
+                color: #9A6375;
+            }
+            .work-list ul{
+                padding-left:20px;
+                font-weight: 200;
+                line-height: 23px;
+                color: #696969;
+             }
+            .soft-list ul{
+                padding-left:20px;
+             }
+            .info-list ul{
+                padding-left:20px;
+             }
+            .work-list a{
+                color: gray;
+            }
+          
+          
+            .college-list:before{
+                content: '\0045';
+                font-size: 19px;
+                font-family: fields;
+                display: block;
+            }
+            .soft-list:before{
+                content: '\0042';
+                font-size: 19px;
+                font-family: fields;
+                display: block;
+            }
+
+            .work-list:before{
+                content: '\0050';
+                font-size: 19px;
+                font-family: fields;
+                display: block;
+            }
+            .college-list:before{
+                content: '\0045';
+                font-size: 19px;
+                font-family: fields;
+                display: block;
+            }
+            .info-list:before{
+                content: '\004d';
+                font-size: 19px;
+                font-family: fields;
+                display: block;
+            }
+            .info-list ul li, .soft-list ul li, .work-list ul li, .college-list ul li{
+                list-style: none;
+            }
+            .info-list ul li:before, .soft-list ul li:before, .work-list ul li:before, .college-listt ul li:before{
+               content: '- ';
+               color:#999;
+
             }
             h3{
-                color: aqua;
+                color: #D0405F;
                 padding:0;
                 margin: 0;
+            }
+            h4{
+                color: #9A6375;
+                margin: 10px 0 0 0;
+            }
+            .contactList li{
+                list-style: none;
+                display: inline-block;
+                color:#c2c2c2;
+            }
+            .contactList a{
+                text-decoration: none;
+                color: #c2c2c2;
+            }
+            .contactList li:first-child:before{
+                font-family: fields;
+                content: '\0047';
+                width: 30px;
+                height: 30px;
+                padding-right: 10px;
+                color: #D0405F;
+            }
+            .contactList li:nth-child(2):before{
+                font-family: fields;
+                content: '\004e';
+                width: 30px;
+                height: 30px;
+                padding-right: 10px;
+                color: #D0405F;
+            }
+            .contactList li:nth-child(3):before{
+                font-family: fields;
+                content: '\0061';
+                width: 30px;
+                height: 30px;
+                padding-right: 10px;
+                color: #D0405F;
+            }
+            .contactList li:nth-child(4):before{
+                font-family: fields;
+                content: '\0054';
+                width: 30px;
+                height: 30px;
+                padding-right: 10px;
+                color: #D0405F;
+            }
+            .linkWork, .linkWork a{
+                width: 250px;
+                background: #c2c2c2;
+                padding: 2px;
+                color: black;
+
+            }
+            .little{
+                font-size: 14px;
+                color: #333;
+                font-weight: 200;
             }
         </style>
 	</head>
@@ -91,27 +222,41 @@
 				    <img src="../assets/me.png">
                 </div>
                 <div class="info-me">
-                orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-            </div>
+                    <span class="cv-head">DIANA CAMPOS</span><br>
+                    <span class="cv-head">Diseño y Comunicación Visual</span>         
+                </div>
+                <div class="infoContact">
+                    <ul class="contactList">
+                        <li>55 3196-2009</li>
+                        <li>di.disegno@gmail.com</li>
+                        <li>dianacampos_h</li>
+                        <li><a href="http://dianafields.com.mx">dianafields.com.mx</a></li>
+                    </ul>
+                </div>
 			</div>	
 			
+
             <div class="education">
                 <section class="">
-                    <div class="edu-icon wow slideInLeft data-wow-duration="2s""></div>
-                    <div class="edu-list wow slideInRight data-wow-duration="5s"">
-                            <h3>Diseño y Comunicación Visual</h3>
-                            <h4>UNAM 2009 | 2013</h4>
+                    <div class="edu-icon">
+                         <h3>Educación</h3>
+                    </div>
+                    <div class="college-list wow bounceInDown data-wow-delay="1s" data-wow-duration="2s""> 
+                            <div class="linkWork">Diseño y Comunicación Visual<br></div>
+                            <h4>UNAM</h4>
                     </div>
                 </section>
 
-                <section class="trans wow bounceInUp data-wow-delay="4s" data-wow-duration="1s"">
-                    <div class="edu-icon"></div>
-                    <div class="edu-list">
-                            <h3>Employment</h3>
-                            
-                            <h4><a href="ww.carel.mx">Carel S.A de C.V</a></h4>
-                            <p></p>
+                <section class="trans">
+                    <div class="exp-icon wow slideInLeft data-wow-duration="2s"">
+                        <h3>Experiencia Laboral</h3>
+                    </div>
+                    <div class="work-list wow slideInUp data-wow-duration="2s"">
+                            <div class="linkWork">
+                                <a target="_blank" href="http://www.carel.mx">Carel S.A de C.V</a>
+                            </div>
                             <p>Marketing & Communication</p>
+                            <span class="little">marzo 2013 - enero 2015</span>
                             <ul>
                                 <li>Diseño Web</li>
                                 <li>Identidad corporativa</li>
@@ -119,15 +264,21 @@
                                 <li>Expo AHR 2013</li>
                             </ul>
 
-                            <h4>Tech&Design</h4>
-                            <p>enero 2015</p>
+                            <div class="linkWork">Tech&Design</div>
+                            <p>Junior Web Design</p>
+                            <span class="little">enero 2015- marzo 2016</span>
+                            <ul>
+                                <li>Mantenimiento Web</li>
+                                <li>Responsive Design</li>
+                                <li>Push Notifications</li>
+                            </ul>
                     </div>
                 </section>
                 <section>
-                    <div class="edu-icon"></div>
-                    <div class="edu-list">
-                            <h3>Conocimientos de software</h3>
-                            
+                    <div class="soft-icon">
+                        <h3>Software</h3>
+                    </div>
+                    <div class="soft-list">
                             <ul>
                                 <li>Photoshop</li>
                                 <li>Illustrator</li>
@@ -139,23 +290,24 @@
                     </div>
                 </section>
                 <section>
-                    <div class="edu-icon"></div>
-                    <div class="edu-list">
-                            <h3>Idiomas</h3>
-                            
-                            <h4>CILS</h4>
-                            <p>Università per Stranieri di Siena</p>
+                    <div class="lang-icon">
+                        <h3>Idiomas</h3>
+                    </div>
+                    <div class="info-list wow bounceInRight data-wow-delay="1s" data-wow-duration="2s"">
+
+                            <h4>Italiano</h4>
                             <ul>
-                                <li>Score: B</li>
+                                <li>CILS B2. Università per Stranieri di Siena</li>
                             </ul>   
 
-                            <h4>IELTS</h4>
-                            <p>Score: 6</p>
+                            <h4>Inglés</h4>
+                            <ul>
+                                <li>IELTS 6. British Council</li>
+                            </ul>
                             
                     </div>
                 </section>
             </div>
-            <div class="skills"></div>
             <div class="experience"></div>
             <div class="contact"></div>
 		</div>
