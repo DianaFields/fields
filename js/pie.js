@@ -1,18 +1,71 @@
 
-$('.pie').forEach(function(pie) {
-  var p = parseFloat(pie.textContent);
-  var NS = "http://www.w3.org/2000/svg";
-  var svg = document.createElementNS(NS, "svg");
-  var circle = document.createElementNS(NS, "circle");
-  var title = document.createElementNS(NS, "title");
-  circle.setAttribute("r", 16);
-  circle.setAttribute("cx", 16);
-  circle.setAttribute("cy", 16);
-  circle.setAttribute("stroke-dasharray", p + " 100");
-  svg.setAttribute("viewBox", "0 0 32 32");
-  title.textContent = pie.textContent;
-  pie.textContent = '';
-  svg.appendChild(title);
-  svg.appendChild(circle);
-  pie.appendChild(svg);
+$( '.chart--bar' ).highcharts({
+  "chart": {
+    "type": "bar"
+  },
+  "credits": {
+    "enabled": false
+  },
+  "title": null,
+  "plotOptions": {
+    "bar": {
+      "pointWidth": 30,
+      "color": "#90d6f3",
+      "colorByPoint": true,
+      "colors": [
+        "#90d6f3",
+        "#61c5ef",
+        "#0fa0dd"
+      ]
+    },
+  },
+  "xAxis": {
+    "min": 0,
+    "title": {
+      "text": null
+    },
+      "labels": {
+          "style" : {
+              "textTransform": "uppercase",
+              "color": "#222"
+          }
+      },
+    "categories": [
+      "Photoshop",
+      "css3",
+      "html5"
+    ]
+  },
+  "yAxis": {
+      "title": {
+          "text": "Posts by People",
+
+          "margin": 15,
+          "style": {
+              "fontSize": "10px",
+              "fontWeight": "normal",
+              "textTransform": "uppercase",
+              "color": "white"
+          }
+      },
+      "labels": {
+          "style" : {
+              "fontSize": "12px",
+              "color": "#222"
+          }
+      }
+  },
+  "legend": {
+    "enabled": false
+  },
+  "series": [
+    {
+      "type": "bar",
+      "data": [
+        2800,
+        160000,
+        80000
+      ]
+    }
+  ]
 });
