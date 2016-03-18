@@ -60,7 +60,10 @@ strong {
 dfn {
     font-style: italic
 }
-
+h1 {
+    margin: .67em 0;
+    font-size: 2em
+}
 mark {
     color: #000;
     background: #ff0
@@ -258,10 +261,16 @@ th {
         border: 1px solid #ddd!important
     }
 }
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
 .glyphicon {
     position: relative;
     top: 1px;
     display: inline-block;
+    font-family: 'fields';
     font-style: normal;
     font-weight: 400;
     line-height: 1;
@@ -519,10 +528,10 @@ th {
     content: "\e078"
 }
 .glyphicon-chevron-left:before {
-    content: "\0065"
+    content: "\e079"
 }
 .glyphicon-chevron-right:before {
-    content: "\0064"
+    content: "\e080"
 }
 .glyphicon-plus-sign:before {
     content: "\e081"
@@ -1071,7 +1080,6 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -1161,7 +1169,23 @@ hr {
 [role=button] {
     cursor: pointer
 }
-
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit
+}
 .h1 .small,
 .h1 small,
 .h2 .small,
@@ -1190,7 +1214,15 @@ h6 small {
     line-height: 1;
     color: #777
 }
-
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px
+}
 .h1 .small,
 .h1 small,
 .h2 .small,
@@ -1301,6 +1333,16 @@ mark {
 }
 .text-muted {
     color: #777
+}
+.text-muted ul{
+    padding:0;
+}
+.text-muted ul li{
+    display:inline-block;
+    border:1px dotted gray;
+    padding:5px;
+    margin:0 7px;
+    font-size: 13px;
 }
 .text-primary {
     color: #337ab7
@@ -1497,7 +1539,6 @@ code,
 kbd,
 pre,
 samp {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace
 }
 code {
     padding: 2px 4px;
@@ -1565,7 +1606,7 @@ pre code {
 }
 @media (min-width: 1200px) {
     .container {
-        width: 1170px
+        width: 100%;
     }
 }
 .container-fluid {
@@ -1575,8 +1616,12 @@ pre code {
     margin-left: auto
 }
 .row {
-    margin-right: -15px;
-    margin-left: -15px
+    width:80%;
+   margin:0 auto;
+}
+.row-project{
+    width:100%;
+    margin:0 auto;
 }
 .col-lg-1,
 .col-lg-10,
@@ -2164,7 +2209,7 @@ pre code {
         width: 75%
     }
     .col-lg-8 {
-        width: 66.66666667%
+        width: 76.666667%
     }
     .col-lg-7 {
         width: 58.33333333%
@@ -2296,7 +2341,7 @@ pre code {
         margin-left: 25%
     }
     .col-lg-offset-2 {
-        margin-left: 16.66666667%
+        margin-left: 10.666667%
     }
     .col-lg-offset-1 {
         margin-left: 8.33333333%
@@ -3076,7 +3121,7 @@ textarea.input-lg {
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 1px dotted transparent;
+    border: 1px solid transparent;
     border-radius: 4px
 }
 .btn.active.focus,
@@ -3174,8 +3219,7 @@ fieldset[disabled] .btn-default:hover {
 }
 .btn-primary {
     color: #fff;
-    background-color: white;
-    border-color: #2e6da4
+    background-color: #f44f7e;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -3185,8 +3229,7 @@ fieldset[disabled] .btn-default:hover {
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #adadad;
-    border-color: #adadad;
+    background-color: #f44f7e;
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -5947,7 +5990,6 @@ button.close {
     transform: translate(0, -25%)
 }
 .modal.in .modal-dialog {
-    width: 900px;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
@@ -5998,10 +6040,6 @@ button.close {
 .modal-header .close {
     margin-top: -2px
 }
-.modal-header button:before{
-    content: '\004c';
-    font-family: fields;
-}
 .modal-title {
     margin: 0;
     line-height: 1.42857143
@@ -6017,8 +6055,7 @@ button.close {
 }
 .modal-footer .btn+.btn {
     margin-bottom: 0;
-    margin-left: 5px;
-    color: black;
+    margin-left: 5px
 }
 .modal-footer .btn-group .btn+.btn {
     margin-left: -1px
@@ -6035,7 +6072,7 @@ button.close {
 }
 @media (min-width: 768px) {
     .modal-dialog {
-        width: 95%;
+        width: 600px;
         margin: 30px auto
     }
     .modal-content {
@@ -6055,7 +6092,6 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -6173,7 +6209,6 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -6658,10 +6693,6 @@ button.close {
 @media (max-width: 767px) {
     .visible-xs-inline-block {
         display: inline-block!important
-    }
-    .modal-dialog {
-        width: 100%;
-        margin: 30px auto
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
