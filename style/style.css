@@ -741,8 +741,8 @@ nav ul li{
     height:250px;
   }
   h2{
-    font-size: 13px;
-    width: 70%;
+    font-size: 18px!important;
+    width: 100%;
     padding-bottom: 5px;
     border-bottom: 1px solid gray;
     margin-top: 10px;

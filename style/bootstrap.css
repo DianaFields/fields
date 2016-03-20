@@ -1181,7 +1181,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: inherit;
+     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     line-height: 1.1;
     color: inherit
@@ -1595,6 +1595,9 @@ pre code {
     margin-left: auto
 }
 @media (min-width: 768px) {
+    .row{
+        width: 100%;
+    }
     .container {
         width: 750px
     }
@@ -1673,8 +1676,7 @@ pre code {
 .col-xs-9 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
+    padding:0;
 }
 .col-xs-1,
 .col-xs-10,
@@ -4575,7 +4577,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-top: 15px;
     margin-bottom: 15px
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .row{
+        width: 100%;
+    }
     .navbar-text {
         float: left;
         margin-right: 15px;
